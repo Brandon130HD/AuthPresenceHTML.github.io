@@ -1,0 +1,96 @@
+body {
+    background-color: black;
+    box-shadow: 10px 10px 10px rgb(255, 0, 247);;
+}
+
+.container 
+{
+    padding: 15px 15px;
+    position: absolute;
+    /* top: 60%; */
+    top: 50%;
+	left: 50%;
+	/* transform: translate(-50%, -60%); */
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    border: 4px solid rgb(255, 0, 247);
+    box-shadow: 10px 10px 10px gray;
+
+}
+.Userlist 
+{
+    position:absolute;
+    top: 32%;
+    transform: translate(-0%, -0%);
+    background-color: white;
+    border-radius: 10px;
+    border: 4px solid rgb(255, 0, 247);
+    box-shadow: 10px 10px 10px gray;
+}
+
+li:hover {
+   cursor: pointer;
+   background-color: red;
+}
+
+li:active {
+    background-color: aliceblue;
+}
+
+img {
+    height: 40px;
+}
+
+p 
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.webcam 
+{
+    padding: 15px 15px;
+    position: absolute;
+    top: 5%;
+	left: 50%;
+	transform: translate(-50%, -5%);
+    background-color: white;
+    border-radius: 10px;
+    border: 4px solid rgb(255, 0, 247);
+}
+
+.name 
+{
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+
+.submit 
+{
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px 10px;
+}
+
+.submit:hover 
+{
+    background-color: rgb(0, 0, 164);
+    cursor: pointer;
+}
+
+.submit2 
+{
+    color: white;
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px 10px;
+}
+
+.submit2:hover 
+{
+    background-color: rgb(157, 0, 0);
+    cursor: pointer;
+}

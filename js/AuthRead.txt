@@ -1,0 +1,38 @@
+  
+function UserAuth() 
+{
+    var container = document.getElementById('container');
+    var userinsert = document.querySelector('ul');
+    var prenom = document.getElementById('name').value;
+    var nom = document.getElementById('name2').value;
+    var textStatut = document.getElementById('Statut');
+    var submit = document.getElementById('submit');
+    var audio = document.getElementById('ok');
+
+    var create = document.createElement('li');
+    const now = new Date();
+    let hour = now.getHours();
+    let minute = now.getMinutes();
+    let seconde = now.getSeconds();
+    const currentDateTime = hour.toLocaleString() + ":" + minute.toLocaleString() + ":" + seconde.toLocaleString();
+
+    create.textContent = `${prenom} ${nom} ${currentDateTime} ❌`;
+    create.setAttribute('onclick', 'UserAuthDelete(this)');
+    userinsert.appendChild(create);
+
+
+}
+
+function UserAuthDelete(create) 
+{
+    var container = document.getElementById('container');
+    var userinsert = document.querySelector('ul');
+    var prenom = document.getElementById('name').value;
+    var nom = document.getElementById('name2').value;
+    var textStatut = document.getElementById('Statut');
+    var submit = document.getElementById('submit');
+    var audio = document.getElementById('ok');
+
+    create.remove();
+
+}
